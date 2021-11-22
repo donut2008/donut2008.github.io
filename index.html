@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="grad1">
+<html>
 <link rel="icon" href="https://cdn.discordapp.com/attachments/892316599661518872/907648953191919696/download20211000140442.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 <title>donut2008</title>
@@ -37,17 +37,24 @@
         text-align: center;
         font-family: "Inter", sans-serif;
     }
-    #grad1 {
-        height: 100%;
-        background-color: #0c525e;
-	}
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
 </style>
 </head>
 </div>
 <body>
 <div class="header">
+    <button onclick="daynight()"><h5>Toggle day/night mode</h5></button>
 	<h1><font color="white">Welcome to <a href="https://github.com/donut2008"><font color="gray">donut2008's</font></a> homepage!</font></h1>
 </div>
+<script>
+    function daynight() {
+        var element=document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 <style>
     .container { 
     align-self: center;
